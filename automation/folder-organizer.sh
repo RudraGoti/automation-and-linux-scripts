@@ -1,12 +1,9 @@
 #!/bin/bash
 
-# Folder where files are located 
 TARGET_DIR="."
 
-# Create folders
 mkdir -p Images Documents Videos Music Archives Scripts Others
 
-# Move files based on extension
 for file in "$TARGET_DIR"/*; do
     [ -f "$file" ] || continue
 
